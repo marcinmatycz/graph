@@ -1,0 +1,14 @@
+ZADANIE NR 1.
+
+Program był kompilowany przy pomocy kompilatora MinGW, z wykorzystaniem środowiska Visual Studio Code.
+Ustawienia kompilatora znajdują się w plikach w folderze .vscode.
+
+Program kompiluje się również w środowisku Code::Blocks tym samym kompilatorem (ustawienia domyślne).
+
+Graf należy umieścić w pliku graph.txt w katalogu z plikiem wykonywalnym graph.exe.
+Sposób zapisu grafu jest uproszczonym DOT - na początku należy wpisać imiona ulubionych kolegów,
+których domy pomalowano na czerwono, linijka po linijce, kończąc tagiem [red] i średnikiem. 
+Nie wpisywać imion kolegów, którzy nie są pomalowani na czerwono.
+Następnie drzewo należy wpisywać gałęziami, każde z rozgałęzień w nowej linijce.
+Dom podmiotu lirycznego zadania zawsze musi nazywać się root (inaczej program nie będzie działał poprawnie).
+W pliku graph.png znajduje się rozrysowany przykładowy graf z pliku graph.txt.

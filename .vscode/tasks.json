@@ -1,0 +1,64 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558 
+    // for the documentation about the tasks.json format
+    "version": "2.0.0",
+    "tasks": [
+        // GraphParser.cpp
+        {
+            "label": "GraphParser.o build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-c",
+                "-o",
+                "GraphParser.o",
+                "C:\\Users\\marmac\\Desktop\\graph\\GraphParser.cpp"
+            ],
+            "group": "build"
+        },
+        // Vertex.cpp
+        {
+            "label": "Vertex.o build",         
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-c",
+                "-o",
+                "Vertex.o",
+                "C:\\Users\\marmac\\Desktop\\graph\\Vertex.cpp"
+            ],
+            "group": "build"
+        },
+        // main.cpp
+        {
+            "label": "main.o build",
+            "type": "shell",
+            "command": "g++",
+            "args": [
+                "-c",
+                "-o",
+                "main.o",
+                "C:\\Users\\marmac\\Desktop\\graph\\main.cpp"
+            ],
+            "group": "build"
+        },
+        //link
+        {
+            "type": "shell",
+            "label": "graph.exe build",
+            "command": "g++",
+            "args": [
+                "-o",
+                "graph",
+                "GraphParser.o",
+                "Vertex.o",
+                "main.o"
+            ],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            },
+            "dependsOn":["GraphParser.o build", "Vertex.o build", "main.o build"]
+        }
+    ]
+}

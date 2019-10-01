@@ -1,0 +1,17 @@
+mieszko [red];
+cezary [red];
+adam [red];
+andrzej [red];
+tomasz [red];
+melchior [red];
+zenon [red];
+krzysztof [red];
+
+root -> zbigniew -> andrzej -> mieszko -> adam;
+andrzej -> cezary;
+cezary -> piotr -> klaudiusz;
+cezary -> kamil;
+zbigniew -> nikodem -> tomasz -> krzysztof;
+nikodem -> melchior;
+root -> waldemar -> mariusz -> filip;
+mariusz -> zenon;
